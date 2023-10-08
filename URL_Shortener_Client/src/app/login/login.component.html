@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-center align-self-center">
+    
+    <form>
+        <h1 class="d-flex justify-content-center">Login</h1>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="username" #usernameField class="form-control" />
+          <label class="form-label" for="username">Username</label>
+        </div>
+      
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" #passwordFiel class="form-control" />
+          <label class="form-label" for="password">Password</label>
+        </div>
+      
+        <!-- Submit button -->
+        <button type="button" class="btn btn-primary mb-4 w-100"
+        (click)="register(usernameField.value,passwordFiel.value)">Sign in</button>
+      
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="register">Register</a></p>
+        </div>
+      </form>
+</div>
